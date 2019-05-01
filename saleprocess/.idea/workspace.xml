@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50fd4bbd-8a8d-46bd-841b-58829febcda6" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sale$Main.ic" NAME="Main Coverage Results" MODIFIED="1556106309528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>startup.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>quanti</find>
+      <find>getItems</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/saleInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/controller/SystemCreator.java" />
+        <option value="$PROJECT_DIR$/src/model/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/Item.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/SaleLogDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/SaleLog.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ItemDescription.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/SystemCreator.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/SaleInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ItemInfoDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ItemInfo.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/VATDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ItemPriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/SaleInfo.java" />
+        <option value="$PROJECT_DIR$/src/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/model/Sale.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/StoreDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/TimeOfSaleDTO.java" />
+        <option value="$PROJECT_DIR$/src/model/ItemInfo.java" />
+        <option value="$PROJECT_DIR$/src/model/SaleLog.java" />
+        <option value="$PROJECT_DIR$/src/model/Receipt.java" />
+        <option value="$PROJECT_DIR$/src/model/SaleInfo.java" />
+        <option value="$PROJECT_DIR$/src/model/Payment.java" />
+        <option value="$PROJECT_DIR$/src/model/Item.java" />
+        <option value="$PROJECT_DIR$/src/model/CompletedSale.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/Printer.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ItemDescriptionDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/InventorySystem.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ExternalAccounting.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/ChangeDTO.java" />
+        <option value="$PROJECT_DIR$/src/dbhandler/CashRegister.java" />
+        <option value="$PROJECT_DIR$/src/view/View.java" />
+        <option value="$PROJECT_DIR$/test/controller/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/model/PriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/model/SaleItemInfo.java" />
+        <option value="$PROJECT_DIR$/src/util/Amount.java" />
+        <option value="$PROJECT_DIR$/test/util/AmountTest.java" />
+        <option value="$PROJECT_DIR$/src/startup/Main.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java" />
+        <option value="$PROJECT_DIR$/test/model/SaleTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/VATDTO.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1734" />
+    <option name="height" value="1407" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="startup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556711013807" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="se.kth.iv1350.saleProcess.util" />
+      <recent name="se.kth.iv1350.saleProcess.model" />
+      <recent name="model" />
+      <recent name="util" />
+      <recent name="controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.startup.Main" />
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.startup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.util" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.util.AmountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AmountTest.increaseAmount_TestEqualsAmountPositiveResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.util" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.util.AmountTest" />
+      <option name="METHOD_NAME" value="increaseAmount_TestEqualsAmountPositiveResult" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.SaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaleTest.includeItemsTestQuantity_NoItemsPrior" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.SaleTest" />
+      <option name="METHOD_NAME" value="includeItemsTestQuantity_NoItemsPrior" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AmountTest" />
+        <item itemvalue="JUnit.SaleTest (1)" />
+        <item itemvalue="JUnit.AmountTest.increaseAmount_TestEqualsAmountPositiveResult" />
+        <item itemvalue="JUnit.SaleTest.includeItemsTestQuantity_NoItemsPrior" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50fd4bbd-8a8d-46bd-841b-58829febcda6" name="Default Changelist" comment="" />
+      <created>1554447511620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554447511620</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SaleTest_includeItemsTestPrice_IncludeSecondItem - 2019.04.29 at 09h 06m 36s.xml">
+      <configuration name="SaleTest.includeItemsTestPrice_IncludeSecondItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleTest_includeItemsTestPrice_IncreaseQuantityWithSecondItem - 2019.04.29 at 09h 09m 17s.xml">
+      <configuration name="SaleTest.includeItemsTestPrice_IncreaseQuantityWithSecondItem" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleTest - 2019.04.29 at 09h 09m 24s.xml">
+      <configuration name="SaleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleTest_includeItemsTestQuantity_NoItemsPrior - 2019.04.29 at 09h 35m 37s.xml">
+      <configuration name="SaleTest.includeItemsTestQuantity_NoItemsPrior" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleTest_(1) - 2019.04.29 at 09h 35m 46s.xml">
+      <configuration name="SaleTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AmountTest_increaseAmount_TestEqualsAmountPositiveResult - 2019.04.29 at 09h 38m 05s.xml">
+      <configuration name="AmountTest.increaseAmount_TestEqualsAmountPositiveResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AmountTest - 2019.04.29 at 09h 38m 15s.xml">
+      <configuration name="AmountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaleTest_(1) - 2019.04.29 at 09h 39m 23s.xml">
+      <configuration name="SaleTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AmountTest - 2019.04.29 at 09h 39m 45s.xml">
+      <configuration name="AmountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AmountTest - 2019.05.01 at 12h 48m 38s.xml">
+      <configuration name="AmountTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2114252" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32112238" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289166" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289166" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3297491" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" log-message="true" type="java-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="private Item[] items;" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>private Item[] items;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>items</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../Seminarium 2/Lecture Contents/POSsys/POSsys/startup/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startup/Main.java" />
+    <entry file="file://$PROJECT_DIR$/view/View.java" />
+    <entry file="file://$PROJECT_DIR$/model/Sale.java" />
+    <entry file="file://$PROJECT_DIR$/controller/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Inventory.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java" />
+    <entry file="file://$PROJECT_DIR$/test/controller/ControllerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/StoreDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SystemCreator.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/TimeOfSaleDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Receipt.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java" />
+    <entry file="file://$PROJECT_DIR$/test/model/SaleTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/util/AmountTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java" />
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/VATDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ChangeDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/CompletedSale.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Payment.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Item.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" />
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Objektorienterad Design</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
