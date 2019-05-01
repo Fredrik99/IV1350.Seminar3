@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50fd4bbd-8a8d-46bd-841b-58829febcda6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/META-INF/Objektorienterad Design.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/PriceCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/PriceCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/Sale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/Sale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleItemInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleItemInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Objektorienterad Design/META-INF/Objektorienterad Design.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/VATDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/VATDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,11 +37,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -213,6 +209,31 @@
               <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -224,10 +245,10 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556718589427" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556718720600" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/IV1350.Seminar3-master/IV1350.Seminar3-master/saleprocess" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -357,12 +378,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaleTest_includeItemsTestPrice_IncludeSecondItem - 2019.04.29 at 09h 06m 36s.xml">
-      <configuration name="SaleTest.includeItemsTestPrice_IncludeSecondItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SaleTest_includeItemsTestPrice_IncreaseQuantityWithSecondItem - 2019.04.29 at 09h 09m 17s.xml">
-      <configuration name="SaleTest.includeItemsTestPrice_IncreaseQuantityWithSecondItem" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SaleTest - 2019.04.29 at 09h 09m 24s.xml">
       <configuration name="SaleTest" configurationId="JUnit" />
     </history-entry>
@@ -387,6 +402,12 @@
     <history-entry file="AmountTest - 2019.05.01 at 12h 48m 38s.xml">
       <configuration name="AmountTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SaleTest - 2019.05.01 at 15h 49m 40s.xml">
+      <configuration name="SaleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AmountTest - 2019.05.01 at 15h 49m 50s.xml">
+      <configuration name="AmountTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,9 +420,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="3456" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10541814" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10541814" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -410,7 +430,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32112238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32112238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,9 +491,7 @@
     <entry file="file://$PROJECT_DIR$/test/model/SaleTest.java" />
     <entry file="file://$PROJECT_DIR$/test/util/AmountTest.java" />
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" />
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" />
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" />
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/CompletedSale.java" />
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" />
@@ -593,6 +611,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
