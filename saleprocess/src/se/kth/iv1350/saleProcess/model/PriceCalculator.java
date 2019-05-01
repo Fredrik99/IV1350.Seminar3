@@ -1,5 +1,6 @@
 package se.kth.iv1350.saleProcess.model;
 
+import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 /**
@@ -16,11 +17,11 @@ public class PriceCalculator {
     private Amount saleTotalPrice;
 
 
-    PriceCalculator(Item[] items){
+    PriceCalculator(ItemDTO[] itemDTOS){
 
-        setItemQuantities(items);
-        setItemPrices(items);
-        setTotalItemVAT(items);
+        setItemQuantities(itemDTOS);
+        setItemPrices(itemDTOS);
+        setTotalItemVAT(itemDTOS);
         calculateItemsTotalPrice();
         calculateItemVAT();
         calculateSaleTotalVAT();
@@ -28,23 +29,23 @@ public class PriceCalculator {
     }
 
     /**
-     * Sets the itemQuantities of the <code>Item</> of the sale.
+     * Sets the itemQuantities of the <code>ItemDTO</> of the sale.
      *
-     * @param items the <code>Item</> from which to get the itemQuantities.
+     * @param itemDTOS the <code>ItemDTO</> from which to get the itemQuantities.
      */
-    private void setItemQuantities(Item[] items){
-        int[] quantities = new int[items.length];
+    private void setItemQuantities(ItemDTO[] itemDTOS){
+        int[] quantities = new int[itemDTOS.length];
 
         for(int i = 0; i < quantities.length; i ++)
-            quantities[i] = items[i].getQuantity();
+            quantities[i] = itemDTOS[i].getQuantity();
 
         this.itemQuantities = quantities;
     }
 
     /**
-     * Returns the <code>Item<code/> itemQuantities of the sale.
+     * Returns the <code>ItemDTO<code/> itemQuantities of the sale.
      *
-     * @param index The index where the <code>Item<code/> is stored.
+     * @param index The index where the <code>ItemDTO<code/> is stored.
      * @return Teh returned quantity.
      */
      int getQuantities(int index){
@@ -53,51 +54,51 @@ public class PriceCalculator {
     }
 
     /**
-     * Calculates the item prices of each individual <code><Item/code>.
+     * Calculates the item prices of each individual <code><ItemDTO/code>.
      *
-     * @param items The <code>Item<code/> from which to calculate the total.
+     * @param itemDTOS The <code>ItemDTO<code/> from which to calculate the total.
      */
-    private void setItemPrices(Item[] items){
-        Amount[] individualItemsPrice = new Amount[items.length];
+    private void setItemPrices(ItemDTO[] itemDTOS){
+        Amount[] individualItemsPrice = new Amount[itemDTOS.length];
 
         for (int i = 0; i < individualItemsPrice.length; i++)
             individualItemsPrice[i] = new Amount();
 
         for(int i = 0; i < individualItemsPrice.length; i++)
-            individualItemsPrice[i].setAmount(items[i].getPrice());
+            individualItemsPrice[i].setAmount(itemDTOS[i].getPrice());
 
         this.itemPrices = individualItemsPrice;
     }
 
     /**
-     * Returns the <code>Item<code/> price of the sent index.
+     * Returns the <code>ItemDTO<code/> price of the sent index.
      *
-     * @param index The index of the wanted <code>Item<code/> price
-     * @return The <code>Amount<code/> of the <code>Item<code/> price.
+     * @param index The index of the wanted <code>ItemDTO<code/> price
+     * @return The <code>Amount<code/> of the <code>ItemDTO<code/> price.
      */
     Amount getItemPrice(int index){
         return this.itemPrices[index];
     }
 
     /**
-     * Calculates and sets the VATRates-itemPrices for each individual <code>Item<code/> included in the sale.
+     * Calculates and sets the VATRates-itemPrices for each individual <code>ItemDTO<code/> included in the sale.
      *
-     * @param items The multiple <code>Item<code/> from which you get the VATRates-rate of each <code>Item<code/>.
+     * @param itemDTOS The multiple <code>ItemDTO<code/> from which you get the VATRates-rate of each <code>ItemDTO<code/>.
      */
-    private void setTotalItemVAT(Item[] items){
+    private void setTotalItemVAT(ItemDTO[] itemDTOS){
         Amount[] individualItemsVAT = new Amount[this.itemPrices.length];
 
         for (int i = 0; i < individualItemsVAT.length; i++)
             individualItemsVAT[i] = new Amount();
 
         for (int i = 0; i < individualItemsVAT.length; i++)
-            individualItemsVAT[i].setAmount(items[i].getVAT().getItemVAT());
+            individualItemsVAT[i].setAmount(itemDTOS[i].getVAT().getItemVAT());
 
         this.VATRates = individualItemsVAT;
     }
 
     /**
-     * Returns the <code>Item<code/> VATRates at the sent index.
+     * Returns the <code>ItemDTO<code/> VATRates at the sent index.
      *
      * @param index The sent index.
      * @return The VATRates in form of <code>Amount<code/>.

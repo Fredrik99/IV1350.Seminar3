@@ -1,5 +1,6 @@
 package se.kth.iv1350.saleProcess.model;
 
+import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 /**
@@ -7,30 +8,30 @@ import se.kth.iv1350.saleProcess.util.Amount;
  */
 public class Sale
 {
-    private Item[] items;
+    private ItemDTO[] itemDTOS;
     private SaleInfo saleInfo;
 
     /**
      * Creates an instance.
      */
     public Sale(){
-        this.items = new Item[0];
+        this.itemDTOS = new ItemDTO[0];
         this.saleInfo = new SaleInfo();
     }
 
     /**
-     * Handles what items the current sale are supposed to include.
-     * @param includedItem The <code>Item<code/> which are to be included to the sale.
-     * @param quantity The quantity of the <code>Item<code/> to be included.
+     * Handles what itemDTOS the current sale are supposed to include.
+     * @param includedItemDTO The <code>ItemDTO<code/> which are to be included to the sale.
+     * @param quantity The quantity of the <code>ItemDTO<code/> to be included.
      */
-    public void includeItems(Item includedItem, int quantity) {
+    public void includeItems(ItemDTO includedItemDTO, int quantity) {
 
-        if (checkIdentifier(includedItem.getIdentifier()))
-            increaseItemQuantity(includedItem, quantity);
+        if (checkIdentifier(includedItemDTO.getIdentifier()))
+            increaseItemQuantity(includedItemDTO, quantity);
         else
-            includeNewItem(includedItem, quantity);
+            includeNewItem(includedItemDTO, quantity);
 
-        this.saleInfo.updateSaleInfo(this.items);
+        this.saleInfo.updateSaleInfo(this.itemDTOS);
     }
 
     /**Returns the current sales sale information.
@@ -51,16 +52,16 @@ public class Sale
     }
 
     /**
-     * Compares the received identifier with the identifiers in the variable items
+     * Compares the received identifier with the identifiers in the variable itemDTOS
      *
      * @param identifier The received identifier.
      * @return Returns true or false depending on if
-     *         the identifier matches on in the variable items.
+     *         the identifier matches on in the variable itemDTOS.
      */
     private boolean checkIdentifier(int identifier){
 
-        for(Item item: this.items)
-            if(item.getIdentifier() == identifier)
+        for(ItemDTO itemDTO : this.itemDTOS)
+            if(itemDTO.getIdentifier() == identifier)
                 return true;
 
         return false;
@@ -68,32 +69,32 @@ public class Sale
     }
 
     /**
-     * Increases the quantity of the already present <code>Item<code/> type in items.
+     * Increases the quantity of the already present <code>ItemDTO<code/> type in itemDTOS.
      *
-     * @param includedItems The included <code>Item<code/>
-     * @param quantity The quantity of the included <code>Item<code/>.
+     * @param includedItems The included <code>ItemDTO<code/>
+     * @param quantity The quantity of the included <code>ItemDTO<code/>.
      */
-    private void increaseItemQuantity(Item includedItems, int quantity){
-        for (int i = 0; i < this.items.length; i++)
-            if (this.items[i].getIdentifier() == includedItems.getIdentifier())
-                this.items[i].setQuantity(this.items[i].getQuantity() + quantity);
+    private void increaseItemQuantity(ItemDTO includedItems, int quantity){
+        for (int i = 0; i < this.itemDTOS.length; i++)
+            if (this.itemDTOS[i].getIdentifier() == includedItems.getIdentifier())
+                this.itemDTOS[i].setQuantity(this.itemDTOS[i].getQuantity() + quantity);
     }
 
     /**
-     * This method is called if there is a new <code>Item<code/> type received.
+     * This method is called if there is a new <code>ItemDTO<code/> type received.
      *
-     * @param includedItems The new <code>Item<code/> type received.
-     * @param quantity The quantity of the new <code>Item<code/> type to be included.
+     * @param includedItems The new <code>ItemDTO<code/> type received.
+     * @param quantity The quantity of the new <code>ItemDTO<code/> type to be included.
      */
-    private void includeNewItem(Item includedItems, int quantity){
-        Item[] itemHolder = new Item[this.items.length + 1];
+    private void includeNewItem(ItemDTO includedItems, int quantity){
+        ItemDTO[] itemDTOHolder = new ItemDTO[this.itemDTOS.length + 1];
 
-        for (int i = 0; i < this.items.length; i++)
-            itemHolder[i] = this.items[i];
+        for (int i = 0; i < this.itemDTOS.length; i++)
+            itemDTOHolder[i] = this.itemDTOS[i];
 
-        itemHolder[itemHolder.length - 1] = includedItems;
-        itemHolder[itemHolder.length - 1].setQuantity(quantity);
+        itemDTOHolder[itemDTOHolder.length - 1] = includedItems;
+        itemDTOHolder[itemDTOHolder.length - 1].setQuantity(quantity);
 
-        this.items = itemHolder;
+        this.itemDTOS = itemDTOHolder;
     }
 }

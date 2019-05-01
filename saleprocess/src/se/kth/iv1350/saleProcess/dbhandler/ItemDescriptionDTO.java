@@ -11,14 +11,14 @@ public final class ItemDescriptionDTO {
     /**
      * Creates an instance.
      *
-     * @param description The description of the <code>Item<code/>.
+     * @param description The description of the <code>ItemDTO<code/>.
      */
     public ItemDescriptionDTO(String description){
         this.description = description;
     }
 
     /**
-     * Returns the description of an <code>Item<code/>.
+     * Returns the description of an <code>ItemDTO<code/>.
      *
      * @return The description in form of a <code>String<code/>
      */

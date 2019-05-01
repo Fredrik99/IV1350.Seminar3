@@ -1,5 +1,7 @@
 package se.kth.iv1350.saleProcess.model;
 
+import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
+
 /**
  * This class handles the item information of each sale.
  */
@@ -20,67 +22,67 @@ package se.kth.iv1350.saleProcess.model;
     /**
      * Updates the information of the current sale.
      *
-     * @param items Contains all the information about the included object types <>Item</>.
+     * @param itemDTOS Contains all the information about the included object types <>ItemDTO</>.
      */
-     void updateItemInfo(Item[] items){
+     void updateItemInfo(ItemDTO[] itemDTOS){
 
-        setItemNames(items);
-        setItemDescriptions(items);
+        setItemNames(itemDTOS);
+        setItemDescriptions(itemDTOS);
 
-        this.priceCalculator = new PriceCalculator(items);
+        this.priceCalculator = new PriceCalculator(itemDTOS);
     }
 
     /**
-     * Sets the names of the <code>Item<code/> included in the sale.
+     * Sets the names of the <code>ItemDTO<code/> included in the sale.
      *
-     * @param items The items from which to get the names to set.
+     * @param itemDTOS The itemDTOS from which to get the names to set.
      */
-    private void setItemNames(Item[] items){
-        String[] itemnames = new String[items.length];
+    private void setItemNames(ItemDTO[] itemDTOS){
+        String[] itemnames = new String[itemDTOS.length];
 
         for(int i = 0; i < itemnames.length; i++)
-            itemnames[i] = items[i].getName();
+            itemnames[i] = itemDTOS[i].getName();
 
         this.itemNames = itemnames;
     }
 
     /**
-     * Returns <code>Item<code/> names.
+     * Returns <code>ItemDTO<code/> names.
      *
-     * @param index The index of the wanted <code>Item<code/> name.
-     * @return The returned <code>Item<code/> name.
+     * @param index The index of the wanted <code>ItemDTO<code/> name.
+     * @return The returned <code>ItemDTO<code/> name.
      */
      String getItemNames(int index){
         return this.itemNames[index];
     }
 
     /**
-     * Returns how many individual <code>Item</> types there are in the current sale.
+     * Returns how many individual <code>ItemDTO</> types there are in the current sale.
      *
-     * @return The number of <code>Item</> types in form of a <code>Int</>
+     * @return The number of <code>ItemDTO</> types in form of a <code>Int</>
      */
      int getNumberOfItemTypes(){
         return this.itemNames.length;
     }
 
     /**
-     * Set the <code>Item<code/> itemDescriptions
+     * Set the <code>ItemDTO<code/> itemDescriptions
      *
-     * @param items The <code>Item<code/> to get the descriptions from.
+     * @param itemDTOS The <code>ItemDTO<code/> to get the descriptions from.
      */
-    private void setItemDescriptions(Item[] items){
-        String[] descriptions = new String[items.length];
+    private void setItemDescriptions(ItemDTO[] itemDTOS){
+        String[] descriptions = new String[itemDTOS.length];
 
         for (int i = 0; i < descriptions.length; i++)
-            descriptions[i] = items[i].getDescription();
+            descriptions[i] = itemDTOS[i].getDescription();
 
         this.itemDescriptions = descriptions;
     }
 
     /**
-     * Returns the description of an <code>Item<code/>.
+     * Returns the description of an <code>ItemDTO<code/>.
      *
-     * @param index The index of the wanted <code>Item<code/>.
+     * @param index The index of the wanted <code>ItemDTO<code/>.
      * @return The description in form of a <code>String<code/>.
      */
      String getDescriptions(int index){

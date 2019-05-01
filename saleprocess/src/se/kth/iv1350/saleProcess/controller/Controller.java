@@ -33,8 +33,8 @@ public class Controller {
     /**
      * Handles the current sales item registrations.
      *
-     * @param itemID The <code>Item<code/> identification number.
-     * @param quantity The quantity of the <code>Item<code/>.
+     * @param itemID The <code>ItemDTO<code/> identification number.
+     * @param quantity The quantity of the <code>ItemDTO<code/>.
      * @return The current sale information in form of a <code>SaleInfo<code/>.
      */
     public SaleInfo enterItem(int itemID, int quantity){

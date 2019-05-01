@@ -1,14 +1,12 @@
-package se.kth.iv1350.saleProcess.model;
+package se.kth.iv1350.saleProcess.dbhandler;
 
-import se.kth.iv1350.saleProcess.dbhandler.ItemDescriptionDTO;
-import se.kth.iv1350.saleProcess.dbhandler.VATDTO;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 /**
  * This class represents the stores items and
  * contains all the information needed for each item.
  */
-public class Item {
+public class ItemDTO {
 
     private String name;
     private int identifier;
@@ -19,12 +17,12 @@ public class Item {
 
 
     /**
-     * Creates an <code>Item<code/> instance.
+     * Creates an <code>ItemDTO<code/> instance.
      * @param name The name of the created item.
      * @param identifier Each items identifier.
      * @param price The price of an item of the chosen identifier.
      */
-    public Item(String name, int identifier, Amount price, String description){
+    public ItemDTO(String name, int identifier, Amount price, String description){
         this.name = name;
         this.identifier = identifier;
         this.price = price;
@@ -35,7 +33,7 @@ public class Item {
     /**
      * A toString method.
      */
-    public String toString(){
+   public String toString(){
       return description.getDescription();
     }
 
@@ -44,7 +42,7 @@ public class Item {
      *
      * @param quantity The quantity of the wanted item.
      */
-    void setQuantity(int quantity){
+   public void setQuantity(int quantity){
         this.quantity = quantity;
     }
 
@@ -52,46 +50,46 @@ public class Item {
      *
      * @return Returns the quantity of the included item.
      */
-     int getQuantity(){
+    public int getQuantity(){
         return this.quantity;
     }
 
     /**
      * @return Returns the current items identifier.
      */
-     int getIdentifier(){
+   public int getIdentifier(){
         return this.identifier;
     }
 
     /**
-     * Returns the price of the <code>Item<code/>
+     * Returns the price of the <code>ItemDTO<code/>
      * @return The return value in fomr of <code>Amount<code/>
      */
-     Amount getPrice(){
+    public Amount getPrice(){
         return this.price;
     }
 
     /**
-     * Returns the VAT-rate of the current <code>Item<code/>.
-     * @return The <code>VATDTO<code/> of the current <code>Item<code/>.
+     * Returns the VAT-rate of the current <code>ItemDTO<code/>.
+     * @return The <code>VATDTO<code/> of the current <code>ItemDTO<code/>.
      */
-     VATDTO getVAT(){
+    public VATDTO getVAT(){
         return this.vatRate;
     }
 
     /**
-     * Returns the name of the current object <code>Item<code/>.
+     * Returns the name of the current object <code>ItemDTO<code/>.
      * @return The name which is returned.
      */
-     String getName(){
+    public String getName(){
         return this.name;
     }
 
     /**
-     * Returns the the descritption of a <code>Item<code/>
+     * Returns the the descritption of a <code>ItemDTO<code/>
      * @return The <code>String<code/> containing the description.
      */
-     String getDescription(){
+   public String getDescription(){
         return this.description.getDescription();
     }
 }

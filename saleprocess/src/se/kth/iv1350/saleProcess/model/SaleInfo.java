@@ -1,5 +1,6 @@
 package se.kth.iv1350.saleProcess.model;
 
+import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 import se.kth.iv1350.saleProcess.dbhandler.StoreDTO;
 import se.kth.iv1350.saleProcess.dbhandler.TimeOfSaleDTO;
 
@@ -25,11 +26,11 @@ public class SaleInfo {
     /**
      * This method updates the sale information of the current sale.
      *
-     * @param items The <code>Item<code/> objects included in the sale.
+     * @param itemDTOS The <code>ItemDTO<code/> objects included in the sale.
      */
-     void updateSaleInfo(Item[] items){
+     void updateSaleInfo(ItemDTO[] itemDTOS){
 
-        this.saleItemInfo.updateItemInfo(items);
+        this.saleItemInfo.updateItemInfo(itemDTOS);
     }
 
     /**
@@ -73,11 +74,11 @@ public class SaleInfo {
         builder.append("Sale information:\n\n");
 
         for(int i = 0; i < this.saleItemInfo.getNumberOfItemTypes(); i++) {
-            builder.append("Item: " + this.saleItemInfo.getItemNames(i) + ", ");
+            builder.append("ItemDTO: " + this.saleItemInfo.getItemNames(i) + ", ");
             builder.append("Price: " + this.saleItemInfo.getPriceCalculator().getItemPrice(i) + " kr, ");
             builder.append("Quantity: " + this.saleItemInfo.getPriceCalculator().getQuantities(i) + ", ");
             builder.append("VAT-rate: " + this.saleItemInfo.getPriceCalculator().getVATRates(i) + " %, ");
-            builder.append("Item price total: " + this.saleItemInfo.getPriceCalculator().getItemsTotalPrice(i) + " kr, ");
+            builder.append("ItemDTO price total: " + this.saleItemInfo.getPriceCalculator().getItemsTotalPrice(i) + " kr, ");
             builder.append("VAT-amount: " + this.saleItemInfo.getPriceCalculator().getTotalItemVAT(i) + " kr, ");
             builder.append("Description: " + this.saleItemInfo.getDescriptions(i) + "\n\n");
         }

@@ -30,7 +30,7 @@ public final class VATDTO {
     }
 
     /**
-     * Sets the <>Item</> object typoes VAT-rate according to its identifier.
+     * Sets the <>ItemDTO</> object typoes VAT-rate according to its identifier.
      * @param identifier The identifier through the VAT-rate is set.
      */
     private void setItemVAT(int identifier){
