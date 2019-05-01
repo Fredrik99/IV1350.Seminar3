@@ -74,11 +74,11 @@ public class SaleInfo {
         builder.append("Sale information:\n\n");
 
         for(int i = 0; i < this.saleItemInfo.getNumberOfItemTypes(); i++) {
-            builder.append("ItemDTO: " + this.saleItemInfo.getItemNames(i) + ", ");
+            builder.append("Item: " + this.saleItemInfo.getItemNames(i) + ", ");
             builder.append("Price: " + this.saleItemInfo.getPriceCalculator().getItemPrice(i) + " kr, ");
             builder.append("Quantity: " + this.saleItemInfo.getPriceCalculator().getQuantities(i) + ", ");
             builder.append("VAT-rate: " + this.saleItemInfo.getPriceCalculator().getVATRates(i) + " %, ");
-            builder.append("ItemDTO price total: " + this.saleItemInfo.getPriceCalculator().getItemsTotalPrice(i) + " kr, ");
+            builder.append("Item price total: " + this.saleItemInfo.getPriceCalculator().getItemsTotalPrice(i) + " kr, ");
             builder.append("VAT-amount: " + this.saleItemInfo.getPriceCalculator().getTotalItemVAT(i) + " kr, ");
             builder.append("Description: " + this.saleItemInfo.getDescriptions(i) + "\n\n");
         }
