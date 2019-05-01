@@ -17,29 +17,15 @@ public class PriceCalculator {
     private Amount saleTotalPrice;
 
 
-    PriceCalculator(ItemDTO[] itemDTOS){
+    PriceCalculator(ItemDTO[] itemDTOS, int[] quantities){
 
-        setItemQuantities(itemDTOS);
+        this.itemQuantities = quantities;
         setItemPrices(itemDTOS);
         setTotalItemVAT(itemDTOS);
         calculateItemsTotalPrice();
         calculateItemVAT();
         calculateSaleTotalVAT();
         calculateSaleTotalPrice();
-    }
-
-    /**
-     * Sets the itemQuantities of the <code>ItemDTO</> of the sale.
-     *
-     * @param itemDTOS the <code>ItemDTO</> from which to get the itemQuantities.
-     */
-    private void setItemQuantities(ItemDTO[] itemDTOS){
-        int[] quantities = new int[itemDTOS.length];
-
-        for(int i = 0; i < quantities.length; i ++)
-            quantities[i] = itemDTOS[i].getQuantity();
-
-        this.itemQuantities = quantities;
     }
 
     /**

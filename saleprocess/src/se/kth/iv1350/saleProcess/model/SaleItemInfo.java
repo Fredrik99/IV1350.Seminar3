@@ -24,12 +24,12 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
      *
      * @param itemDTOS Contains all the information about the included object types <>ItemDTO</>.
      */
-     void updateItemInfo(ItemDTO[] itemDTOS){
+     void updateItemInfo(ItemDTO[] itemDTOS, int[] quantities){
 
         setItemNames(itemDTOS);
         setItemDescriptions(itemDTOS);
 
-        this.priceCalculator = new PriceCalculator(itemDTOS);
+        this.priceCalculator = new PriceCalculator(itemDTOS, quantities);
     }
 
     /**

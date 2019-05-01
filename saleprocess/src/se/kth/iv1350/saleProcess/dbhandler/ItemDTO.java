@@ -10,7 +10,6 @@ public class ItemDTO {
 
     private String name;
     private int identifier;
-    private int quantity;
     private Amount price;
     private ItemDescriptionDTO description;
     private VATDTO vatRate;
@@ -35,23 +34,6 @@ public class ItemDTO {
      */
    public String toString(){
       return description.getDescription();
-    }
-
-    /**
-     * Sets the wanted item quantity.
-     *
-     * @param quantity The quantity of the wanted item.
-     */
-   public void setQuantity(int quantity){
-        this.quantity = quantity;
-    }
-
-    /**
-     *
-     * @return Returns the quantity of the included item.
-     */
-    public int getQuantity(){
-        return this.quantity;
     }
 
     /**

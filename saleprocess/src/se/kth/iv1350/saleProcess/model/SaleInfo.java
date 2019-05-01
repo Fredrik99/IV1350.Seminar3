@@ -28,9 +28,9 @@ public class SaleInfo {
      *
      * @param itemDTOS The <code>ItemDTO<code/> objects included in the sale.
      */
-     void updateSaleInfo(ItemDTO[] itemDTOS){
+     void updateSaleInfo(ItemDTO[] itemDTOS, int[] quantities){
 
-        this.saleItemInfo.updateItemInfo(itemDTOS);
+        this.saleItemInfo.updateItemInfo(itemDTOS, quantities);
     }
 
     /**

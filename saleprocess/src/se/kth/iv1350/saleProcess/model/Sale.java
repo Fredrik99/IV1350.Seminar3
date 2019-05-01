@@ -8,6 +8,7 @@ import se.kth.iv1350.saleProcess.util.Amount;
  */
 public class Sale
 {
+    private int[] quantities;
     private ItemDTO[] itemDTOS;
     private SaleInfo saleInfo;
 
@@ -15,6 +16,7 @@ public class Sale
      * Creates an instance.
      */
     public Sale(){
+        this.quantities = new int[0];
         this.itemDTOS = new ItemDTO[0];
         this.saleInfo = new SaleInfo();
     }
@@ -31,7 +33,7 @@ public class Sale
         else
             includeNewItem(includedItemDTO, quantity);
 
-        this.saleInfo.updateSaleInfo(this.itemDTOS);
+        this.saleInfo.updateSaleInfo(this.itemDTOS, this.quantities);
     }
 
     /**Returns the current sales sale information.
@@ -77,7 +79,7 @@ public class Sale
     private void increaseItemQuantity(ItemDTO includedItems, int quantity){
         for (int i = 0; i < this.itemDTOS.length; i++)
             if (this.itemDTOS[i].getIdentifier() == includedItems.getIdentifier())
-                this.itemDTOS[i].setQuantity(this.itemDTOS[i].getQuantity() + quantity);
+                this.quantities[i] = this.quantities[i] + quantity;
     }
 
     /**
@@ -89,12 +91,17 @@ public class Sale
     private void includeNewItem(ItemDTO includedItems, int quantity){
         ItemDTO[] itemDTOHolder = new ItemDTO[this.itemDTOS.length + 1];
 
-        for (int i = 0; i < this.itemDTOS.length; i++)
+        int[] quantityHolder = new int[this.quantities.length + 1];
+
+        for (int i = 0; i < this.itemDTOS.length; i++) {
             itemDTOHolder[i] = this.itemDTOS[i];
+            quantityHolder[i] = this.quantities[i];
+        }
 
         itemDTOHolder[itemDTOHolder.length - 1] = includedItems;
-        itemDTOHolder[itemDTOHolder.length - 1].setQuantity(quantity);
+        quantityHolder[quantityHolder.length - 1] = quantity;
 
         this.itemDTOS = itemDTOHolder;
+        this.quantities = quantityHolder;
     }
 }
