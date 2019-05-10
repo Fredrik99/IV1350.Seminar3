@@ -1,5 +1,7 @@
 package se.kth.iv1350.saleProcess.controller;
+
 import se.kth.iv1350.saleProcess.dbhandler.ChangeDTO;
+import se.kth.iv1350.saleProcess.dbhandler.InventoryException;
 import se.kth.iv1350.saleProcess.model.SaleInfo;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.model.Payment;
@@ -36,11 +38,24 @@ public class Controller {
      * @param itemID The <code>ItemDTO<code/> identification number.
      * @param quantity The quantity of the <code>ItemDTO<code/>.
      * @return The current sale information in form of a <code>SaleInfo<code/>.
+     * @throws <code>InvalidIdentifierException<code/> when user enters an invalid item ID.
+     * @throws <code>OperationFailedException<code/> when there is a database failure.
      */
-    public SaleInfo enterItem(int itemID, int quantity){
-        currentSale.includeItems(this.systemCreator.getInventorySystem().getItemFromInventorySystem(itemID), quantity);
+    public SaleInfo enterItem(int itemID, int quantity) throws OperationFailedException, InvalidIdentifierException {
 
-       return currentSale.getSaleInfo();
+        try {
+            currentSale.includeItems(this.systemCreator.getInventorySystem().getItemFromInventorySystem(itemID), quantity);
+        }
+        catch (InventoryException exception){
+            System.out.println("LOG INFORMATION: " + exception.getMessage());
+            throw new InvalidIdentifierException(itemID);
+        }
+        catch (RuntimeException exception){
+            System.out.println("LOG INFORMATION: " + exception.getMessage());
+            throw new OperationFailedException("Program could not get access to the database", exception);
+        }
+
+        return currentSale.getSaleInfo();
     }
 
     /**

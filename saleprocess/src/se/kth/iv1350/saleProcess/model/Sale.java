@@ -1,5 +1,6 @@
 package se.kth.iv1350.saleProcess.model;
 
+import se.kth.iv1350.saleProcess.dbhandler.InventoryException;
 import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 import se.kth.iv1350.saleProcess.util.Amount;
 
@@ -23,17 +24,18 @@ public class Sale
 
     /**
      * Handles what itemDTOS the current sale are supposed to include.
+     *
      * @param includedItemDTO The <code>ItemDTO<code/> which are to be included to the sale.
      * @param quantity The quantity of the <code>ItemDTO<code/> to be included.
      */
-    public void includeItems(ItemDTO includedItemDTO, int quantity) {
+    public void includeItems(ItemDTO includedItemDTO, int quantity){
 
-        if (checkIdentifier(includedItemDTO.getIdentifier()))
-            increaseItemQuantity(includedItemDTO, quantity);
-        else
-            includeNewItem(includedItemDTO, quantity);
+            if (checkIdentifier(includedItemDTO.getIdentifier()))
+                increaseItemQuantity(includedItemDTO, quantity);
+            else
+                includeNewItem(includedItemDTO, quantity);
 
-        this.saleInfo.updateSaleInfo(this.itemDTOS, this.quantities);
+            this.saleInfo.updateSaleInfo(this.itemDTOS, this.quantities);
     }
 
     /**Returns the current sales sale information.

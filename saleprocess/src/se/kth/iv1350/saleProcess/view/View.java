@@ -1,24 +1,26 @@
 package se.kth.iv1350.saleProcess.view;
 import se.kth.iv1350.saleProcess.controller.Controller;
+import se.kth.iv1350.saleProcess.controller.InvalidIdentifierException;
+import se.kth.iv1350.saleProcess.controller.OperationFailedException;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 /**
 *    This class is the placeholder for the entire view
 *    since the program has no view.
  */
-
-
 public class View{
-    private Controller contr;
+    private Controller controller;
+    private ErrorMessageHandler errorMessageHandler;
 
     /**
      * Creates a new instance.
      *
-     * @param contr The controller that is used for all operations
+     * @param controller The controller that is used for all operations
      */
-public View(Controller contr) {
+public View(Controller controller) {
 
-    this.contr = contr;
+    this.controller = controller;
+    this.errorMessageHandler = new ErrorMessageHandler();
 }
 
     /**
@@ -27,14 +29,41 @@ public View(Controller contr) {
      */
     public void runFakeSale(){
 
-    contr.startNewSale();
+    controller.startNewSale();
 
-        System.out.println(contr.enterItem(3,1));
-        System.out.println(contr.enterItem(1,3));
-        System.out.println(contr.enterItem(2,2));
-        System.out.println(contr.enterItem(0,1));
-        System.out.println(contr.enterItem(3,1));
-        System.out.println(contr.allItemsRegistered());
-        System.out.println("Customer change: "+ contr.pay(new Amount(70000)) + " kr");
+    try {
+        System.out.println(controller.enterItem(100, 1));
     }
+    catch (OperationFailedException | InvalidIdentifierException exception){
+        handleException(exception);
+    }
+
+        try {
+        System.out.println(controller.enterItem(99,3));
+    }
+    catch (OperationFailedException | InvalidIdentifierException exception){
+        handleException(exception);
+    }
+
+        try {
+        System.out.println(controller.enterItem(1,3));
+    }
+    catch (OperationFailedException | InvalidIdentifierException exception){
+        handleException(exception);
+    }
+
+
+        System.out.println(controller.allItemsRegistered());
+    System.out.println("Customer change: "+ controller.pay(new Amount(70000)) + " kr");
+    }
+
+    /**
+     * When an exception is thrown this method is called to handle that exception.
+     *
+     * @param exception is the exception causing the call of this method.
+     */
+    private void handleException(Exception exception){
+        errorMessageHandler.presentErrorMessage(exception);
+    }
+
 }

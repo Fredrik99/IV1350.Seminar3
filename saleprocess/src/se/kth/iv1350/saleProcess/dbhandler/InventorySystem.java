@@ -27,11 +27,22 @@ public class InventorySystem {
 
     /**
      * Returns the wanted items entered via the view class.
+     *
      * @param itemID The identification  number of the wanted item.
      * @return Returns the wanted items.
+     * @throws <code>InventoryException<code/> when a user enters an invalid item ID.
+     * @throws <code>RunTimeException<code/> when a simulated database failure has occurred.
      */
-    public ItemDTO getItemFromInventorySystem(int itemID){
-        return this.itemDTOList[itemID];
+    public ItemDTO getItemFromInventorySystem(int itemID) throws InventoryException {
+
+        if(itemID == 100)
+            throw new java.lang.RuntimeException("Database failure");
+
+        for (ItemDTO item: this.itemDTOList)
+            if(item.getIdentifier() == itemID)
+                return item;
+
+            throw new InventoryException("User entered an item identifier that does not exist in inventory");
     }
 
     /**
