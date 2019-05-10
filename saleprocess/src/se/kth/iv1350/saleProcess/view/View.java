@@ -18,7 +18,7 @@ public class View {
      *
      * @param controller The controller that is used for all operations
      */
-public View(se.kth.iv1350.saleProcess.controller.Controller controller) {
+public View(Controller controller) {
 
     this.controller = controller;
     this.errorMessageHandler = new ErrorMessageHandler();
