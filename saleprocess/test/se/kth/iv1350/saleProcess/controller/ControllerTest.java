@@ -24,6 +24,9 @@ public class ControllerTest {
     @After
     public void tearDown() {
         this.testController = null;
+        this.testInvalidIdentifierException = null;
+        this.runtimeException = null;
+        this.testOperationFailedException = null;
     }
 
     @Test

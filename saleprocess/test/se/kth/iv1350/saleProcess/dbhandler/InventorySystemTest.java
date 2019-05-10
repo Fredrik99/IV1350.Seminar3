@@ -21,6 +21,8 @@ public class InventorySystemTest {
     @After
     public void tearDown() {
         this.inventorySystem = null;
+        this.inventorySystemException = null;
+        this.runtimeException = null;
     }
 
     @Test
