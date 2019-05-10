@@ -4,7 +4,7 @@ package se.kth.iv1350.saleProcess.dbhandler;
  * This exception class is thrown when a user is trying to add
  * an item that does not exist in the inventory.
  */
-public class InventoryException extends Exception{
+public class InventorySystemException extends Exception{
 
     /**
      * Creates an instance and logs a message which specifies
@@ -12,7 +12,7 @@ public class InventoryException extends Exception{
      *
      * @param message is the message that is being logged.
      */
-     InventoryException(String message){
+     InventorySystemException(String message){
         super(message);
     }
 }

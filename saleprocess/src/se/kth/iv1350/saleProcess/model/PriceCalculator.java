@@ -6,7 +6,7 @@ import se.kth.iv1350.saleProcess.util.Amount;
 /**
  * This class handles all the price calculations of the current sale.
  */
-public class PriceCalculator {
+class PriceCalculator {
 
     private int[] itemQuantities;
     private Amount[] itemPrices;

@@ -1,4 +1,5 @@
 package se.kth.iv1350.saleProcess.view;
+
 import se.kth.iv1350.saleProcess.controller.Controller;
 import se.kth.iv1350.saleProcess.controller.InvalidIdentifierException;
 import se.kth.iv1350.saleProcess.controller.OperationFailedException;
@@ -8,7 +9,7 @@ import se.kth.iv1350.saleProcess.util.Amount;
 *    This class is the placeholder for the entire view
 *    since the program has no view.
  */
-public class View{
+public class View {
     private Controller controller;
     private ErrorMessageHandler errorMessageHandler;
 
@@ -17,7 +18,7 @@ public class View{
      *
      * @param controller The controller that is used for all operations
      */
-public View(Controller controller) {
+public View(se.kth.iv1350.saleProcess.controller.Controller controller) {
 
     this.controller = controller;
     this.errorMessageHandler = new ErrorMessageHandler();

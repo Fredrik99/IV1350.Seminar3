@@ -12,8 +12,7 @@ public class ExternalAccounting {
     /**
      * Creates an instance.
      */
-    public ExternalAccounting(){
-
+     ExternalAccounting(){
     }
 
     /**

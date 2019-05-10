@@ -15,7 +15,7 @@ public final class VATDTO {
     /**
      * Creates an instance of the class and sets the items VAT-rate.
      */
-    public VATDTO(int identifier){
+     VATDTO(int identifier){
 
         this.itemVAT = new Amount();
         setItemVAT(identifier);

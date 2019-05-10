@@ -5,7 +5,7 @@ package se.kth.iv1350.saleProcess.dbhandler;
  * individual item in the inventory system
  */
 
-public final class ItemDescriptionDTO {
+ final class ItemDescriptionDTO {
     private String description;
 
     /**
@@ -13,7 +13,7 @@ public final class ItemDescriptionDTO {
      *
      * @param description The description of the <code>ItemDTO<code/>.
      */
-    public ItemDescriptionDTO(String description){
+     ItemDescriptionDTO(String description){
         this.description = description;
     }
 
@@ -22,7 +22,7 @@ public final class ItemDescriptionDTO {
      *
      * @return The description in form of a <code>String<code/>
      */
-    public String getDescription(){
+     String getDescription(){
        return description;
     }
 }

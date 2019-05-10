@@ -1,7 +1,7 @@
 package se.kth.iv1350.saleProcess.controller;
 
 import se.kth.iv1350.saleProcess.dbhandler.ChangeDTO;
-import se.kth.iv1350.saleProcess.dbhandler.InventoryException;
+import se.kth.iv1350.saleProcess.dbhandler.InventorySystemException;
 import se.kth.iv1350.saleProcess.model.SaleInfo;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.model.Payment;
@@ -46,12 +46,12 @@ public class Controller {
         try {
             currentSale.includeItems(this.systemCreator.getInventorySystem().getItemFromInventorySystem(itemID), quantity);
         }
-        catch (InventoryException exception){
-            System.out.println("LOG INFORMATION: " + exception.getMessage());
+        catch (InventorySystemException exception){
+            System.out.println("LOG MESSAGE: " + exception.getMessage());
             throw new InvalidIdentifierException(itemID);
         }
         catch (RuntimeException exception){
-            System.out.println("LOG INFORMATION: " + exception.getMessage());
+            System.out.println("LOG MESSAGE: " + exception.getMessage());
             throw new OperationFailedException("Program could not get access to the database", exception);
         }
 

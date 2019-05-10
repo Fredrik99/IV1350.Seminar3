@@ -12,7 +12,7 @@ public class InventorySystem {
     private SaleLog saleLog;
 
     /**
-     * Creates an instance and instanciates itemDTOList
+     * Creates an instance and instantiates itemDTOList
      * which is an array of fake items.
      */
      InventorySystem(){
@@ -30,10 +30,10 @@ public class InventorySystem {
      *
      * @param itemID The identification  number of the wanted item.
      * @return Returns the wanted items.
-     * @throws <code>InventoryException<code/> when a user enters an invalid item ID.
+     * @throws <code>InventorySystemException<code/> when a user enters an invalid item ID.
      * @throws <code>RunTimeException<code/> when a simulated database failure has occurred.
      */
-    public ItemDTO getItemFromInventorySystem(int itemID) throws InventoryException {
+    public ItemDTO getItemFromInventorySystem(int itemID) throws InventorySystemException {
 
         if(itemID == 100)
             throw new java.lang.RuntimeException("Database failure");
@@ -42,7 +42,7 @@ public class InventorySystem {
             if(item.getIdentifier() == itemID)
                 return item;
 
-            throw new InventoryException("User entered an item identifier that does not exist in inventory");
+            throw new InventorySystemException("User entered an item identifier that does not exist in inventory");
     }
 
     /**

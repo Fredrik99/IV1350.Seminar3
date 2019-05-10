@@ -1,6 +1,5 @@
 package se.kth.iv1350.saleProcess.model;
 
-import se.kth.iv1350.saleProcess.dbhandler.InventoryException;
 import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 import se.kth.iv1350.saleProcess.util.Amount;
 

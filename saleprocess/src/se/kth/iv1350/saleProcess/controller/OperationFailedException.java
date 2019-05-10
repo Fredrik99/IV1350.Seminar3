@@ -11,7 +11,7 @@ public class OperationFailedException extends Exception {
      * @param message is the exception message.
      * @param exception is the exception that caused this exception.
      */
-    public OperationFailedException(String message, Exception exception){
+     OperationFailedException(String message, Exception exception){
         super(message, exception);
     }
 }
