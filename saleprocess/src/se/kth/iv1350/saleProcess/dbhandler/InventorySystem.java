@@ -30,8 +30,8 @@ public class InventorySystem {
      *
      * @param itemID The identification  number of the wanted item.
      * @return Returns the wanted items.
-     * @throws <code>InventorySystemException<code/> when a user enters an invalid item ID.
-     * @throws <code>RunTimeException<code/> when a simulated database failure has occurred.
+     * @throws <code>InventorySystemException<code/> when a user enters an invalid item ID
+     * and <code>RunTimeException<code/> when a simulated database failure has occurred.
      */
     public ItemDTO getItemFromInventorySystem(int itemID) throws InventorySystemException {
 

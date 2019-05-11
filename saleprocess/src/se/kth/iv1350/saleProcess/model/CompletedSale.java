@@ -6,7 +6,6 @@ import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
  * This class finalizes the current sale.
  */
  class CompletedSale {
-
     private SaleLog saleLog;
     private Receipt receipt;
 
@@ -32,7 +31,6 @@ import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
      *                     different system classes.
      */
     private void updateExternalSystems(SystemCreator systemCreator){
-
         systemCreator.getExternalAccounting().updateExternalAccounting(this.saleLog);
         systemCreator.getInventorySystem().updateInventorySystem(this.saleLog);
     }
@@ -44,7 +42,6 @@ import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
      *                      which contains an object ofd type <code>Printer<code/>.
      */
     private void printReceipt(SystemCreator systemCreator){
-
         systemCreator.getPrinter().printReceipt(this.receipt);
     }
 }

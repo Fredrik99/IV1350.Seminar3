@@ -14,7 +14,6 @@ public class SaleLog {
      * @param payment Contains the payment information of the finalized sale.
      */
      SaleLog(SaleInfo saleInfo, Payment payment){
-
         this.saleInfo = saleInfo;
         this.payment = payment;
     }
@@ -33,6 +32,5 @@ public class SaleLog {
      */
      Payment getPayment(){
         return this.payment;
-
     }
 }

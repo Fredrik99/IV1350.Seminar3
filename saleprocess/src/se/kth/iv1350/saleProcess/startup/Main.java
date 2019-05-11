@@ -16,7 +16,6 @@ public class Main {
      */
     public static void main(String[] args){
 
-        System.out.println("\n\n    ***The sale has started***\n\n");
         SystemCreator systemCreator = new SystemCreator();
         se.kth.iv1350.saleProcess.controller.Controller controller = new se.kth.iv1350.saleProcess.controller.Controller(systemCreator);
         View view = new View(controller);

@@ -22,7 +22,7 @@ public class Sale
     }
 
     /**
-     * Handles what itemDTOS the current sale are supposed to include.
+     * Handles what itemDTOs the current sale are supposed to include.
      *
      * @param includedItemDTO The <code>ItemDTO<code/> which are to be included to the sale.
      * @param quantity The quantity of the <code>ItemDTO<code/> to be included.
@@ -68,7 +68,6 @@ public class Sale
                 return true;
 
         return false;
-
     }
 
     /**

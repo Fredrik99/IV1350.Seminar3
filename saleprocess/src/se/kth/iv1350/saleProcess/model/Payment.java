@@ -4,6 +4,9 @@ import se.kth.iv1350.saleProcess.dbhandler.ChangeDTO;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.util.Amount;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * This class handles the payment part of the sale.
  */
@@ -12,26 +15,52 @@ public class Payment {
     private Amount totalPrice;
     private ChangeDTO change;
     private CompletedSale completedSale;
+    private List<SaleObserver> saleObservers = new ArrayList<>();
+
 
     /**
      * Creates an instance.
-     *
-     * @param paidAmount The amount paid.
-     * @param totalPrice The amount of the sales total price.
      */
-    public Payment(Amount paidAmount, Amount totalPrice){
+    public Payment(){
+    }
 
+    /**
+     * Calculates the change to give to the customer according
+     * to the received payment and total price of the current sale.
+     *
+     * @param paidAmount is the paid amount from the customer.
+     * @param totalPrice is the current sales total price.
+     */
+    public void addPayment (Amount paidAmount, Amount totalPrice){
         this.paidAmount = paidAmount;
         this.totalPrice = totalPrice;
         calculateChange();
+        notifyObservers();
     }
+
 
     /**
      * Calculates what change to give to the customer.
      */
     private void calculateChange() {
-
         this.change = new ChangeDTO(this.paidAmount, this.totalPrice);
+    }
+
+    /**
+     * Adds observers that are observing the <code>Payment<code/> class.
+     *
+     * @param observers is the observer that are being added to the list of sale observers.
+     */
+    public void addSaleObservers(List<SaleObserver> observers) {
+        this.saleObservers.addAll(observers);
+    }
+
+    /**
+     * Notifies observer classes that a new amount has been paid.
+     */
+    private void notifyObservers(){
+        for (SaleObserver observer: this.saleObservers)
+            observer.newAmountPaid(this.totalPrice);
     }
 
     /**

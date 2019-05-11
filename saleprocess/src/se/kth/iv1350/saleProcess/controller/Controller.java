@@ -6,7 +6,11 @@ import se.kth.iv1350.saleProcess.model.SaleInfo;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.model.Payment;
 import se.kth.iv1350.saleProcess.model.Sale;
+import se.kth.iv1350.saleProcess.model.SaleObserver;
 import se.kth.iv1350.saleProcess.util.Amount;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * This is the applications only controller class.
@@ -16,6 +20,7 @@ public class Controller {
     private Sale currentSale;
     private SystemCreator systemCreator;
     private Payment payment;
+    private List<SaleObserver> saleObservers = new ArrayList<>();
 
     /**
      * Creates a new instance and initiates the variable systemCreator.
@@ -30,6 +35,7 @@ public class Controller {
      */
     public void startNewSale() {
     this.currentSale = new Sale();
+        System.out.println("\n\n    ***A new sale has started***\n\n");
     }
 
     /**
@@ -38,8 +44,8 @@ public class Controller {
      * @param itemID The <code>ItemDTO<code/> identification number.
      * @param quantity The quantity of the <code>ItemDTO<code/>.
      * @return The current sale information in form of a <code>SaleInfo<code/>.
-     * @throws <code>InvalidIdentifierException<code/> when user enters an invalid item ID.
-     * @throws <code>OperationFailedException<code/> when there is a database failure.
+     * @throws <code>InvalidIdentifierException<code/> when user enters an invalid item ID or
+     * <code>OperationFailedException<code/> when there is a database failure.
      */
     public SaleInfo enterItem(int itemID, int quantity) throws OperationFailedException, InvalidIdentifierException {
 
@@ -83,10 +89,22 @@ public class Controller {
     public ChangeDTO pay(Amount paidAmount){
 
         this.systemCreator.getCashRegister().addPayment(this.currentSale.getTotalPrice());
-        this.payment = new Payment(paidAmount, this.currentSale.getTotalPrice());
+        this.payment = new Payment();
+        this.payment.addSaleObservers(this.saleObservers);
+        this.payment.addPayment(paidAmount, this.currentSale.getTotalPrice());
         this.payment.completeSale(this.currentSale, this.systemCreator);
 
         return this.payment.getChange();
     }
 
+    /**
+     * Adds an observer to the <code>List<code/> saleObservers that are
+     * going to be notified when a payment has been made.
+     *
+     * @param observer is the observer that is going to be notified
+     *                of change in the <code>Payment<code/> class.
+     */
+   public void addSaleObserver(SaleObserver observer){
+       this.saleObservers.add(observer);
+   }
 }

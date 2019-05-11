@@ -21,6 +21,7 @@ public class View {
 public View(Controller controller) {
 
     this.controller = controller;
+    this.controller.addSaleObserver(new TotalRevenueView());
     this.errorMessageHandler = new ErrorMessageHandler();
 }
 
@@ -53,9 +54,37 @@ public View(Controller controller) {
         handleException(exception);
     }
 
-
         System.out.println(controller.allItemsRegistered());
     System.out.println("Customer change: "+ controller.pay(new Amount(70000)) + " kr");
+
+
+
+
+        controller.startNewSale();
+
+        try {
+            System.out.println(controller.enterItem(100, 1));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        try {
+            System.out.println(controller.enterItem(99,3));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        try {
+            System.out.println(controller.enterItem(1,3));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        System.out.println(controller.allItemsRegistered());
+        System.out.println("Customer change: "+ controller.pay(new Amount(70000)) + " kr");
     }
 
     /**
@@ -66,5 +95,4 @@ public View(Controller controller) {
     private void handleException(Exception exception){
         errorMessageHandler.presentErrorMessage(exception);
     }
-
 }

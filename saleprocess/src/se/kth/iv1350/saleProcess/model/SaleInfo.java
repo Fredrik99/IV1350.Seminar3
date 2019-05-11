@@ -8,7 +8,6 @@ import se.kth.iv1350.saleProcess.dbhandler.TimeOfSaleDTO;
  * This class contains the sale information of the current sale.
  */
 public class SaleInfo {
-
     private StoreDTO storeInfo;
     private TimeOfSaleDTO timOfSale;
     private SaleItemInfo saleItemInfo;

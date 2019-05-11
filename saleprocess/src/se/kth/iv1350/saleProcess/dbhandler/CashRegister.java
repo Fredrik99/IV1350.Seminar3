@@ -6,9 +6,7 @@ import se.kth.iv1350.saleProcess.util.Amount;
  * This class represents the stores cash register where
  * the sales transactions are taking place and money is beeing handled.
  */
-
 public class CashRegister {
-
     private Amount amountPresent;
 
     /**
@@ -16,7 +14,7 @@ public class CashRegister {
      */
     CashRegister(){
         this.amountPresent = new Amount(100000);
-        System.out.println("Amount present in the cash register: " + this.amountPresent + " kr\n");
+        System.out.println("\n\n  Amount present in the cash register: " + this.amountPresent + " kr\n");
     }
 
     /**
