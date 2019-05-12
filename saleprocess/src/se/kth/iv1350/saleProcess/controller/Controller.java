@@ -6,7 +6,7 @@ import se.kth.iv1350.saleProcess.model.SaleInfo;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.model.Payment;
 import se.kth.iv1350.saleProcess.model.Sale;
-import se.kth.iv1350.saleProcess.model.SaleObserver;
+import se.kth.iv1350.saleProcess.dbhandler.SaleObserver;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 import java.util.ArrayList;
@@ -89,9 +89,7 @@ public class Controller {
     public ChangeDTO pay(Amount paidAmount){
 
         this.systemCreator.getCashRegister().addPayment(this.currentSale.getTotalPrice());
-        this.payment = new Payment();
-        this.payment.addSaleObservers(this.saleObservers);
-        this.payment.addPayment(paidAmount, this.currentSale.getTotalPrice());
+        this.payment = new Payment(paidAmount, this.currentSale.getTotalPrice());
         this.payment.completeSale(this.currentSale, this.systemCreator);
 
         return this.payment.getChange();
@@ -106,5 +104,6 @@ public class Controller {
      */
    public void addSaleObserver(SaleObserver observer){
        this.saleObservers.add(observer);
+       this.systemCreator.getCashRegister().addSaleObservers(this.saleObservers);
    }
 }

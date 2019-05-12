@@ -1,4 +1,4 @@
-package se.kth.iv1350.saleProcess.model;
+package se.kth.iv1350.saleProcess.dbhandler;
 
 import se.kth.iv1350.saleProcess.util.Amount;
 

@@ -1,6 +1,6 @@
 package se.kth.iv1350.saleProcess.view;
 
-import se.kth.iv1350.saleProcess.model.SaleObserver;
+import se.kth.iv1350.saleProcess.dbhandler.SaleObserver;
 import se.kth.iv1350.saleProcess.util.Amount;
 
 /**

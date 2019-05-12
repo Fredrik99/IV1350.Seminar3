@@ -1,4 +1,5 @@
 package se.kth.iv1350.saleProcess.startup;
+import se.kth.iv1350.saleProcess.controller.Controller;
 import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
 import se.kth.iv1350.saleProcess.view.View;
 
@@ -17,7 +18,7 @@ public class Main {
     public static void main(String[] args){
 
         SystemCreator systemCreator = new SystemCreator();
-        se.kth.iv1350.saleProcess.controller.Controller controller = new se.kth.iv1350.saleProcess.controller.Controller(systemCreator);
+        Controller controller = new Controller(systemCreator);
         View view = new View(controller);
 
         view.runFakeSale();
