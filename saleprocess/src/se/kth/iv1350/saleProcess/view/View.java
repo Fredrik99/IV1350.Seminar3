@@ -34,14 +34,14 @@ public View(Controller controller) {
     controller.startNewSale();
 
     try {
-        System.out.println(controller.enterItem(100, 1));
+        System.out.println(controller.enterItem(1, 1));
     }
     catch (OperationFailedException | InvalidIdentifierException exception){
         handleException(exception);
     }
 
         try {
-        System.out.println(controller.enterItem(99,3));
+        System.out.println(controller.enterItem(3,3));
     }
     catch (OperationFailedException | InvalidIdentifierException exception){
         handleException(exception);
@@ -55,7 +55,7 @@ public View(Controller controller) {
     }
 
         System.out.println(controller.allItemsRegistered());
-    System.out.println("Customer change: "+ controller.pay(new Amount(70000)) + " kr");
+    System.out.println("Customer change: "+ controller.pay(new Amount(60000)) + " kr");
 
 
 
@@ -63,7 +63,7 @@ public View(Controller controller) {
         controller.startNewSale();
 
         try {
-            System.out.println(controller.enterItem(100, 1));
+            System.out.println(controller.enterItem(2, 5));
         }
         catch (OperationFailedException | InvalidIdentifierException exception){
             handleException(exception);
@@ -77,14 +77,43 @@ public View(Controller controller) {
         }
 
         try {
-            System.out.println(controller.enterItem(1,3));
+            System.out.println(controller.enterItem(0,3));
         }
         catch (OperationFailedException | InvalidIdentifierException exception){
             handleException(exception);
         }
 
         System.out.println(controller.allItemsRegistered());
-        System.out.println("Customer change: "+ controller.pay(new Amount(70000)) + " kr");
+        System.out.println("Customer change: "+ controller.pay(new Amount(55000)) + " kr");
+
+
+
+
+        controller.startNewSale();
+
+        try {
+            System.out.println(controller.enterItem(0, 1));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        try {
+            System.out.println(controller.enterItem(100,3));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        try {
+            System.out.println(controller.enterItem(3,3));
+        }
+        catch (OperationFailedException | InvalidIdentifierException exception){
+            handleException(exception);
+        }
+
+        System.out.println(controller.allItemsRegistered());
+        System.out.println("Customer change: "+ controller.pay(new Amount(25000)) + " kr");
     }
 
     /**

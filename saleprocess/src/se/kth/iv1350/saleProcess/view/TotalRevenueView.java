@@ -18,7 +18,7 @@ public class TotalRevenueView implements SaleObserver {
     }
 
     /**
-     * Increases <>totalRevenue</> with an amount that has been paid.
+     * Increases the attribute totalRevenue with an <code>Amount<code/> that has been paid.
      *
      * @param amountPaid is the amount that has been paid.
      */
@@ -34,6 +34,6 @@ public class TotalRevenueView implements SaleObserver {
     private void printCurrentRevenue(){
             System.out.println("    #####REVENUE UPDATE#####\n");
         System.out.println("  Current revenue is: " + this.totalRevenue + " kr\n");
-        System.out.println("################################\n");
+        System.out.println("###################################\n");
     }
 }

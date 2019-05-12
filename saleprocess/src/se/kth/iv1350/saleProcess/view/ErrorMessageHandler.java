@@ -13,7 +13,7 @@ package se.kth.iv1350.saleProcess.view;
      void presentErrorMessage(Exception exception){
         StringBuilder builder = new StringBuilder();
         builder.append("ERROR: ");
-        builder.append(exception.getMessage() + "\n");
+        builder.append(exception.getMessage() + "\n\n");
         System.out.println(builder);
     }
 }
