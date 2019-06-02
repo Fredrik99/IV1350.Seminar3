@@ -49,7 +49,7 @@ public final class Amount {
     /**
      * Subtracts two <code>Amount<code/> types.
      * @param amountNum The amount in the numerator.
-     * @param amountDen The amount in the denomiator.
+     * @param amountDen The amount in the denominator.
      */
     public void subtractAmount (Amount amountNum, Amount amountDen){
         this.amount = amountNum.getAmount() - amountDen.getAmount();

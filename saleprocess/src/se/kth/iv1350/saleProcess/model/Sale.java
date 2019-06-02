@@ -104,4 +104,20 @@ public class Sale
         this.itemDTOS = itemDTOHolder;
         this.quantities = quantityHolder;
     }
+
+    /**
+     * Returns the current quantities of the sale
+     * @return is the returned quantities.
+     */
+    public int[] getQuantities() {
+        return quantities;
+    }
+
+    /**
+     * Returns the items of the current sale
+     * @return is the item objects of the current sale.
+     */
+    public ItemDTO[] getItemDTOS() {
+        return itemDTOS;
+    }
 }

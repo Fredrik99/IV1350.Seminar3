@@ -13,7 +13,7 @@ public class SaleLog {
      * @param saleInfo Contains the sale information of the finalized sale.
      * @param payment Contains the payment information of the finalized sale.
      */
-     SaleLog(SaleInfo saleInfo, Payment payment){
+    public SaleLog(SaleInfo saleInfo, Payment payment){
         this.saleInfo = saleInfo;
         this.payment = payment;
     }
@@ -22,7 +22,7 @@ public class SaleLog {
      * Returns the sale information of the finalized sale.
      * @return A <code>SaleInfo<code/> object type as return value.
      */
-     SaleInfo getSaleInfo(){
+     public SaleInfo getSaleInfo(){
         return this.saleInfo;
     }
 
@@ -30,7 +30,7 @@ public class SaleLog {
      * Returns the payment information of the finalized sale.
      * @return The payment information in form of a <code>Payment<code/> object.
      */
-     Payment getPayment(){
+    public Payment getPayment(){
         return this.payment;
     }
 }

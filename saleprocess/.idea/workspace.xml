@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50fd4bbd-8a8d-46bd-841b-58829febcda6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/DataBaseFailureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/ExceptionLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/CashRegisterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ChangeDTOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ExternalAccountingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/StoreDTOTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/DiscountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/PaymentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleItemInfoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/CashRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/CashRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/Printer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/Printer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/PriceCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/PriceCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/Sale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/Sale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleItemInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleItemInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/model/SaleLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/TotalRevenueView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/TotalRevenueView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Objektorienterad Design/se/kth/iv1350/saleProcess/view/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/ControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/controller/ControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/util/AmountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Objektorienterad Design/se/kth/iv1350/saleProcess/util/AmountTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,86 +66,88 @@
     </SUITE>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SaleObserver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.284522">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/ExceptionLogger.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="646">
+                  <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#529#530#0" expanded="true" />
+                    <element signature="e#558#559#0" expanded="true" />
+                    <element signature="e#749#750#0" expanded="true" />
+                    <element signature="e#784#785#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="71">
+                  <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Discount.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="633">
+                  <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4885#4886#0" expanded="true" />
+                    <element signature="e#4919#4920#0" expanded="true" />
+                    <element signature="e#5049#5050#0" expanded="true" />
+                    <element signature="e#5079#5080#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -106,6 +157,8 @@
       <find>getItems</find>
       <find>u</find>
       <find>cashr</find>
+      <find>cashre</find>
+      <find>getsal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,61 +167,61 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/model/CompletedSale.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/Printer.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/ItemDescriptionDTO.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/InventorySystem.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/ExternalAccounting.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/ChangeDTO.java" />
-        <option value="$PROJECT_DIR$/src/dbhandler/CashRegister.java" />
-        <option value="$PROJECT_DIR$/src/view/View.java" />
-        <option value="$PROJECT_DIR$/test/controller/ControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/model/PriceCalculator.java" />
-        <option value="$PROJECT_DIR$/src/model/SaleItemInfo.java" />
-        <option value="$PROJECT_DIR$/src/util/Amount.java" />
-        <option value="$PROJECT_DIR$/test/util/AmountTest.java" />
-        <option value="$PROJECT_DIR$/src/startup/Main.java" />
-        <option value="$PROJECT_DIR$/test/model/SaleTest.java" />
-        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java" />
-        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Item.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Item.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDTO.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InvalidIdentifierException.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/NoSuchItemException.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/InvalidIdentifierException.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventoryException.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/InvalidIdentifierException.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/OperationFailedException.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/VATDTO.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" />
         <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/OperationFailedExceptionTest.java" />
         <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/InvalidIdentifierExceptionTest.java" />
         <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemExceptionTest.java" />
-        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java" />
-        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ControllerTest.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleObserver.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ConsoleTotalRevenueDisplay.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/CompletedSale.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Payment.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/CashRegisterTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ChangeDTOTest.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleInfoTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleItemInfoTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/PaymentTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/ReceiptTest.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/StoreDTOTest.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ExternalAccountingTest.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/ExceptionLogger.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/DataBaseFailureException.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Payment.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SaleObserver.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java" />
         <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java" />
-        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountA.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountStrategy.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountC.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountB.java" />
+        <option value="$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/DiscountTest.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Discount.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java" />
+        <option value="$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountException.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-1727" />
     <option name="width" value="1734" />
     <option name="height" value="1407" />
@@ -181,7 +234,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,11 +295,50 @@
               <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="saleprocess" type="b2602c69:ProjectViewProjectNode" />
+              <item name="saleprocess" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="saleProcess" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -254,7 +346,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557939064668" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559499655852" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -265,10 +357,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="se.kth.iv1350.saleProcess.controller" />
-      <recent name="se.kth.iv1350.saleProcess.dbhandler" />
-      <recent name="se.kth.iv1350.saleProcess.util" />
       <recent name="se.kth.iv1350.saleProcess.model" />
+      <recent name="se.kth.iv1350.saleProcess.dbhandler" />
+      <recent name="se.kth.iv1350.saleProcess.controller" />
+      <recent name="se.kth.iv1350.saleProcess.util" />
       <recent name="model" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -304,63 +396,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AmountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountTest.discountRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Objektorienterad Design" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.kth.iv1350.saleProcess.util.*" />
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.util" />
-      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.util.AmountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Objektorienterad Design" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.kth.iv1350.saleProcess.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.controller" />
-      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.controller.ControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControllerTest.enterItemTestInvalidIdentifierException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Objektorienterad Design" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="se.kth.iv1350.saleProcess.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.controller" />
-      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.controller.ControllerTest" />
-      <option name="METHOD_NAME" value="enterItemTestInvalidIdentifierException" />
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.DiscountTest" />
+      <option name="METHOD_NAME" value="discountRequestTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventorySystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountTest.discountRequestTestConcreteDiscountA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Objektorienterad Design" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.kth.iv1350.saleProcess.dbhandler.*" />
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.dbhandler" />
-      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.dbhandler.InventorySystemTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.DiscountTest" />
+      <option name="METHOD_NAME" value="discountRequestTestConcreteDiscountA" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountTest.discountRequestTestConcreteDiscountB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.DiscountTest" />
+      <option name="METHOD_NAME" value="discountRequestTestConcreteDiscountB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountTest.discountRequestTestConcreteDiscountC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Objektorienterad Design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="se.kth.iv1350.saleProcess.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="se.kth.iv1350.saleProcess.model" />
+      <option name="MAIN_CLASS_NAME" value="se.kth.iv1350.saleProcess.model.DiscountTest" />
+      <option name="METHOD_NAME" value="discountRequestTestConcreteDiscountC" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -368,10 +463,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ControllerTest" />
-        <item itemvalue="JUnit.InventorySystemTest" />
-        <item itemvalue="JUnit.AmountTest" />
-        <item itemvalue="JUnit.ControllerTest.enterItemTestInvalidIdentifierException" />
+        <item itemvalue="JUnit.DiscountTest.discountRequestTestConcreteDiscountC" />
+        <item itemvalue="JUnit.DiscountTest.discountRequestTestConcreteDiscountB" />
+        <item itemvalue="JUnit.DiscountTest.discountRequestTestConcreteDiscountA" />
+        <item itemvalue="JUnit.DiscountTest.discountRequestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -389,35 +484,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ControllerTest_enterItemTestOperationFailedException - 2019.05.10 at 18h 33m 26s.xml">
-      <configuration name="ControllerTest.enterItemTestOperationFailedException" configurationId="JUnit" />
+    <history-entry file="InventorySystemTest_getItemFromInventoryDataBaseFailureTest - 2019.06.02 at 10h 46m 05s.xml">
+      <configuration name="InventorySystemTest.getItemFromInventoryDataBaseFailureTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_enterItemTestOperationFailedException - 2019.05.10 at 18h 34m 23s.xml">
-      <configuration name="ControllerTest.enterItemTestOperationFailedException" configurationId="JUnit" />
+    <history-entry file="InventorySystemTest_getItemFromInventoryDataBaseFailureTest - 2019.06.02 at 10h 46m 12s.xml">
+      <configuration name="InventorySystemTest.getItemFromInventoryDataBaseFailureTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_enterItemTestOperationFailedException - 2019.05.10 at 18h 36m 24s.xml">
-      <configuration name="ControllerTest.enterItemTestOperationFailedException" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestExceptionTest - 2019.06.02 at 18h 22m 20s.xml">
+      <configuration name="DiscountTest.discountRequestExceptionTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest_enterItemTestInvalidIdentifierException - 2019.05.10 at 18h 37m 10s.xml">
-      <configuration name="ControllerTest.enterItemTestInvalidIdentifierException" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTest - 2019.06.02 at 18h 27m 41s.xml">
+      <configuration name="DiscountTest.discountRequestTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest - 2019.05.10 at 18h 37m 16s.xml">
-      <configuration name="ControllerTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountB - 2019.06.02 at 18h 30m 18s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountB" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AmountTest - 2019.05.10 at 18h 37m 27s.xml">
-      <configuration name="AmountTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountB - 2019.06.02 at 18h 31m 18s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountB" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventorySystemTest - 2019.05.10 at 18h 42m 58s.xml">
-      <configuration name="InventorySystemTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountB - 2019.06.02 at 18h 31m 53s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountB" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest - 2019.05.10 at 18h 43m 02s.xml">
-      <configuration name="ControllerTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountA - 2019.06.02 at 18h 32m 44s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountA" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventorySystemTest - 2019.05.10 at 18h 49m 58s.xml">
-      <configuration name="InventorySystemTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountB - 2019.06.02 at 18h 32m 49s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountB" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ControllerTest - 2019.05.10 at 18h 50m 05s.xml">
-      <configuration name="ControllerTest" configurationId="JUnit" />
+    <history-entry file="DiscountTest_discountRequestTestConcreteDiscountC - 2019.06.02 at 18h 32m 53s.xml">
+      <configuration name="DiscountTest.discountRequestTestConcreteDiscountC" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -430,9 +525,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3448" y="-8" width="3456" height="1416" extended-state="6" />
+    <frame x="-1727" y="0" width="1734" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10188457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21266428" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -441,15 +537,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7887763" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39952904" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21271585" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32657832" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3281372" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.1340608" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -490,50 +586,141 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Seminarium 2/Lecture Contents/POSsys/POSsys/startup/Main.java" />
-    <entry file="file://$PROJECT_DIR$/startup/Main.java" />
-    <entry file="file://$PROJECT_DIR$/view/View.java" />
-    <entry file="file://$PROJECT_DIR$/model/Sale.java" />
-    <entry file="file://$PROJECT_DIR$/controller/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/Inventory.java" />
-    <entry file="file://$PROJECT_DIR$/test/controller/ControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/model/SaleTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/util/AmountTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java">
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ChangeDTOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDTO.java">
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/ReceiptTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleItemInfoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2135">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/FileInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="210" column="24" selection-start-line="210" selection-start-column="24" selection-end-line="210" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleInfoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/StoreDTOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="113" selection-start-line="24" selection-start-column="7" selection-end-line="25" selection-end-column="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/PaymentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SystemCreator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/StoreDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/TimeOfSaleDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/Printer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ItemDescriptionDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -544,31 +731,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/OperationFailedExceptionTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/InvalidIdentifierExceptionTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemExceptionTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/SaleTest.java">
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/ExternalAccountingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1863">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="867">
+          <caret line="59" column="79" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ViewTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/util/AmountTest.java">
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/CashRegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-935">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="-136">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -577,68 +750,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/controller/ControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state relative-caret-position="388">
+          <caret line="155" column="50" lean-forward="true" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ConsoleTotalRevenueDisplay.java" />
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SystemCreator.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="44" column="45" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-          <folding>
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#1771#1772#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="221">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -648,14 +771,7 @@
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2370">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -666,6 +782,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ChangeDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Payment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystemException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -673,10 +810,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/ErrorMessageHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Sale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="-289">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/DataBaseFailureException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/Amount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SaleObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/SaleItemInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="102" column="4" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/dbhandler/InventorySystemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/se/kth/iv1350/saleProcess/model/DiscountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -687,56 +909,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/OperationFailedException.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/PriceCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="76" selection-start-line="45" selection-start-column="76" selection-end-line="45" selection-end-column="76" />
-          <folding>
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ChangeDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/ExternalAccounting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/startup/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="34">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/TimeOfSaleDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/TotalRevenueView.java">
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/DiscountException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        <state relative-caret-position="136">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/ConcreteDiscountB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/util/ExceptionLogger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="64" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/model/Discount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -745,49 +994,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="106" column="81" selection-start-line="106" selection-start-column="81" selection-end-line="106" selection-end-column="81" />
+        <state relative-caret-position="465">
+          <caret line="96" column="46" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/SaleObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/CashRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/se/kth/iv1350/saleProcess/dbhandler/InventorySystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4885#4886#0" expanded="true" />
+            <element signature="e#4919#4920#0" expanded="true" />
+            <element signature="e#5049#5050#0" expanded="true" />
+            <element signature="e#5079#5080#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -36,7 +36,7 @@ public class InventorySystem {
     public ItemDTO getItemFromInventorySystem(int itemID) throws InventorySystemException {
 
         if(itemID == 100)
-            throw new java.lang.RuntimeException("Database failure");
+            throw new DataBaseFailureException("Database failure");
 
         for (ItemDTO item: this.itemDTOList)
             if(item.getIdentifier() == itemID)
@@ -52,7 +52,14 @@ public class InventorySystem {
      */
     public void updateInventorySystem (SaleLog saleLog){
         this.saleLog = saleLog;
+        System.out.println("***Inventory has been updated!***\n\n");
+    }
 
-        System.out.println("***Inventory has ben updated!***\n\n");
+    /**
+     * Returns the attribute saleLog
+     * @return is the returned saleLog attribute.
+     */
+     SaleLog getSaleLog() {
+        return saleLog;
     }
 }

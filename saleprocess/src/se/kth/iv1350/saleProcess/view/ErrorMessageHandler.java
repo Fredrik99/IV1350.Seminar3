@@ -10,10 +10,10 @@ package se.kth.iv1350.saleProcess.view;
      *
      * @param exception is the exception which caused the error
      */
-     void presentErrorMessage(Exception exception){
+     void presentErrorMessage(String exception){
         StringBuilder builder = new StringBuilder();
         builder.append("ERROR: ");
-        builder.append(exception.getMessage() + "\n\n");
+        builder.append(exception + "\n\n");
         System.out.println(builder);
     }
 }

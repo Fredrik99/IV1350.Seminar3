@@ -15,8 +15,7 @@ public class SaleInfo {
     /**
      * Creates an instance.
      */
-     SaleInfo(){
-
+    public SaleInfo(){
         this.saleItemInfo = new SaleItemInfo();
         this.storeInfo = new StoreDTO();
         this.timOfSale = new TimeOfSaleDTO();
@@ -27,7 +26,7 @@ public class SaleInfo {
      *
      * @param itemDTOS The <code>ItemDTO<code/> objects included in the sale.
      */
-     void updateSaleInfo(ItemDTO[] itemDTOS, int[] quantities){
+    public void updateSaleInfo(ItemDTO[] itemDTOS, int[] quantities){
 
         this.saleItemInfo.updateItemInfo(itemDTOS, quantities);
     }
@@ -48,7 +47,7 @@ public class SaleInfo {
      * @return A <code>StoreDTO<code/> object containing
      *         the name and adress of the store.
      */
-     StoreDTO getStoreInfo(){
+   public StoreDTO getStoreInfo(){
         return this.storeInfo;
     }
 
@@ -58,7 +57,7 @@ public class SaleInfo {
      * @return A <code>SaleItemInfo<code/> object type containing
      *         information about the sales items.
      */
-     SaleItemInfo getSaleItemInfo(){
+    public SaleItemInfo getSaleItemInfo(){
         return this.saleItemInfo;
     }
 

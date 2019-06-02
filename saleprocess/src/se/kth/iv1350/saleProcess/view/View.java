@@ -4,6 +4,7 @@ import se.kth.iv1350.saleProcess.controller.Controller;
 import se.kth.iv1350.saleProcess.controller.InvalidIdentifierException;
 import se.kth.iv1350.saleProcess.controller.OperationFailedException;
 import se.kth.iv1350.saleProcess.util.Amount;
+import se.kth.iv1350.saleProcess.util.ExceptionLogger;
 
 /**
 *    This class is the placeholder for the entire view
@@ -33,87 +34,45 @@ public View(Controller controller) {
 
     controller.startNewSale();
 
-    try {
-        System.out.println(controller.enterItem(1, 1));
-    }
-    catch (OperationFailedException | InvalidIdentifierException exception){
-        handleException(exception);
-    }
-
-        try {
-        System.out.println(controller.enterItem(3,3));
-    }
-    catch (OperationFailedException | InvalidIdentifierException exception){
-        handleException(exception);
-    }
-
-        try {
-        System.out.println(controller.enterItem(1,3));
-    }
-    catch (OperationFailedException | InvalidIdentifierException exception){
-        handleException(exception);
-    }
-
-        System.out.println(controller.allItemsRegistered());
-    System.out.println("Customer change: "+ controller.pay(new Amount(60000)) + " kr");
-
-
-
-
-        controller.startNewSale();
-
-        try {
-            System.out.println(controller.enterItem(2, 5));
-        }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
-        }
-
-        try {
-            System.out.println(controller.enterItem(99,3));
-        }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
-        }
-
-        try {
-            System.out.println(controller.enterItem(0,3));
-        }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
-        }
-
-        System.out.println(controller.allItemsRegistered());
-        System.out.println("Customer change: "+ controller.pay(new Amount(55000)) + " kr");
-
-
-
-
-        controller.startNewSale();
-
         try {
             System.out.println(controller.enterItem(0, 1));
-        }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
-        }
-
-        try {
-            System.out.println(controller.enterItem(100,3));
-        }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
+        } catch (OperationFailedException exception) {
+            handleException("Program could not get access to the database");
+        } catch (InvalidIdentifierException exception) {
+            handleException("There exists no item in registry with the chosen identification number");
         }
 
         try {
-            System.out.println(controller.enterItem(3,3));
+            System.out.println(controller.enterItem(1, 1));
+        } catch (OperationFailedException exception) {
+            handleException("Program could not get access to the database");
+        } catch (InvalidIdentifierException exception) {
+            handleException("There exists no item in registry with the chosen identification number");
         }
-        catch (OperationFailedException | InvalidIdentifierException exception){
-            handleException(exception);
+
+        try {
+            System.out.println(controller.enterItem(2, 1));
+        } catch (OperationFailedException exception) {
+            handleException("Program could not get access to the database");
+        } catch (InvalidIdentifierException exception) {
+            handleException("There exists no item in registry with the chosen identification number");
+        }
+
+        try {
+            System.out.println(controller.enterItem(100, 1));
+        } catch (OperationFailedException exception) {
+            handleException("Program could not get access to the database");
+        } catch (InvalidIdentifierException exception) {
+            handleException("There exists no item in registry with the chosen identification number");
         }
 
         System.out.println(controller.allItemsRegistered());
-        System.out.println("Customer change: "+ controller.pay(new Amount(25000)) + " kr");
+
+        System.out.println(this.controller.discountRequest(11));
+
+        System.out.println("Customer change: "+ controller.pay(new Amount(25000)) + " kr\n\n");
+
+        System.out.println(ExceptionLogger.getInstance().getExceptionLog());
     }
 
     /**
@@ -121,7 +80,7 @@ public View(Controller controller) {
      *
      * @param exception is the exception causing the call of this method.
      */
-    private void handleException(Exception exception){
+    private void handleException(String exception){
         errorMessageHandler.presentErrorMessage(exception);
     }
 }

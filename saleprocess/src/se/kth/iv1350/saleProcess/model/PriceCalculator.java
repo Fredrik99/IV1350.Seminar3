@@ -6,7 +6,7 @@ import se.kth.iv1350.saleProcess.util.Amount;
 /**
  * This class handles all the price calculations of the current sale.
  */
-class PriceCalculator {
+public class PriceCalculator {
 
     private int[] itemQuantities;
     private Amount[] itemPrices;
@@ -14,7 +14,7 @@ class PriceCalculator {
     private Amount[] itemsTotalPrice;
     private Amount[] totalItemVAT;
     private Amount saleTotalVAT;
-    private Amount saleTotalPrice;
+    private Amount saleTotalPrice = null;
 
 
     PriceCalculator(ItemDTO[] itemDTOS, int[] quantities){
@@ -192,8 +192,40 @@ class PriceCalculator {
      * Returns the total price of the current sale.
      * @return The total amount in form of a <code>Amount<code/> object.
      */
-    Amount getSaleTotalPrice(){
+   public Amount getSaleTotalPrice(){
         return this.saleTotalPrice;
+    }
+
+    /**
+     * Is called for when a discount needs to be calculated on a specific item.
+     * @param discountRate is the rate of the discount on the speicifc item
+     * @param index is the index which the item can be located at.
+     */
+     void calculateDiscount(Amount discountRate, int index) {
+         calculateDiscountedItemPrice(discountRate ,index);
+         calculateDiscountedVAT(discountRate, index);
+         calculateItemsTotalPrice();
+         calculateItemVAT();
+         calculateSaleTotalVAT();
+         calculateSaleTotalPrice();
+     }
+
+    /**
+     * Calculates a specific items discounted price.
+     * @param discountRate is the rate of the discount.
+     * @param index is the index location of the item in question.
+     */
+    private void calculateDiscountedItemPrice(Amount discountRate, int index) {
+         this.itemPrices[index].multiplyAmount(discountRate);
+    }
+
+    /**
+     * Calculates the VAT of a discount item.
+     * @param discountRate is the rate of the discount.
+     * @param index is the index location of the item in question.
+     */
+    private void calculateDiscountedVAT(Amount discountRate, int index) {
+         this.totalItemVAT[index].multiplyAmount(discountRate);
     }
 
 }

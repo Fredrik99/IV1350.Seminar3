@@ -88,7 +88,6 @@ public class AmountTest {
             noArgConstraint.subtractAmount(amtSetAtTen, denominator);
 
             assertEquals("The amount does not equal 7", 7,noArgConstraint.getAmount(),0.001);
-
         }
 
         @Test

@@ -13,7 +13,7 @@ public class TotalRevenueView implements SaleObserver {
     /**
      * Creates an instance and sets the totalRevenue attribute to zero.
      */
-    TotalRevenueView(){
+    public TotalRevenueView(){
         this.totalRevenue = new Amount(0);
     }
 
@@ -35,5 +35,14 @@ public class TotalRevenueView implements SaleObserver {
             System.out.println("    #####REVENUE UPDATE#####\n");
         System.out.println("  Current revenue is: " + this.totalRevenue + " kr\n");
         System.out.println("###################################\n");
+    }
+
+
+    /**
+     * Returns the current total revenue.
+     * @return is the returned revenue.
+     */
+    public Amount getTotalRevenue() {
+        return totalRevenue;
     }
 }

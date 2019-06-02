@@ -1,14 +1,12 @@
 package se.kth.iv1350.saleProcess.controller;
 
-import se.kth.iv1350.saleProcess.dbhandler.ChangeDTO;
-import se.kth.iv1350.saleProcess.dbhandler.InventorySystemException;
-import se.kth.iv1350.saleProcess.model.SaleInfo;
-import se.kth.iv1350.saleProcess.dbhandler.SystemCreator;
-import se.kth.iv1350.saleProcess.model.Payment;
-import se.kth.iv1350.saleProcess.model.Sale;
-import se.kth.iv1350.saleProcess.dbhandler.SaleObserver;
+import se.kth.iv1350.saleProcess.dbhandler.*;
+import se.kth.iv1350.saleProcess.model.*;
 import se.kth.iv1350.saleProcess.util.Amount;
+import se.kth.iv1350.saleProcess.util.ExceptionLogger;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +19,7 @@ public class Controller {
     private SystemCreator systemCreator;
     private Payment payment;
     private List<SaleObserver> saleObservers = new ArrayList<>();
+    private Discount discount;
 
     /**
      * Creates a new instance and initiates the variable systemCreator.
@@ -53,11 +52,13 @@ public class Controller {
             currentSale.includeItems(this.systemCreator.getInventorySystem().getItemFromInventorySystem(itemID), quantity);
         }
         catch (InventorySystemException exception){
-            System.out.println("LOG MESSAGE: " + exception.getMessage());
             throw new InvalidIdentifierException(itemID);
         }
-        catch (RuntimeException exception){
-            System.out.println("LOG MESSAGE: " + exception.getMessage());
+        catch (DataBaseFailureException exception){
+            StringWriter sw = new StringWriter();
+            PrintWriter pw = new PrintWriter(sw);
+            exception.printStackTrace(pw);
+            ExceptionLogger.getInstance().log(sw.toString());
             throw new OperationFailedException("Program could not get access to the database", exception);
         }
 
@@ -77,6 +78,28 @@ public class Controller {
         builder.append(this.currentSale.getTotalPrice() + "\n");
 
         return builder.toString();
+    }
+
+    /**
+     * This method is called for when a customer signals that they are eligible for a discount.
+     *
+     * @param customerID is the identification number of the customer in question.
+     * @return is the new price total after discount.
+     */
+    public String discountRequest(int customerID) {
+
+        this.discount = new Discount();
+
+       try {
+           this.discount.discountRequest(customerID, this.getCurrentSale().getSaleInfo());
+       }
+       catch(DiscountException exception){
+           return exception.getMessage() + "\n";
+       }
+
+        String discountPrice = "Discounted price: " + this.currentSale.getSaleInfo().getSaleItemInfo().getPriceCalculator().getSaleTotalPrice() + "\n";
+
+        return discountPrice;
     }
 
     /**
@@ -106,4 +129,20 @@ public class Controller {
        this.saleObservers.add(observer);
        this.systemCreator.getCashRegister().addSaleObservers(this.saleObservers);
    }
+
+    /**
+     * Returns the current sale attribute
+     * @return is the Sale object being returned.
+     */
+     Sale getCurrentSale() {
+        return currentSale;
+    }
+
+    /**
+     * Returns the payment attribute.
+     * @return is the returned payment object.
+     */
+     Payment getPayment() {
+        return payment;
+    }
 }

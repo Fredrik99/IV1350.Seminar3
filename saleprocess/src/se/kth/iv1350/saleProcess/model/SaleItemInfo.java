@@ -5,9 +5,10 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
 /**
  * This class handles the item information of each sale.
  */
- class SaleItemInfo {
+ public class SaleItemInfo {
 
     private PriceCalculator priceCalculator;
+    private int[] itemIdentifiers;
     private String[] itemNames;
     private String[] itemDescriptions;
 
@@ -26,8 +27,9 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
      */
      void updateItemInfo(ItemDTO[] itemDTOS, int[] quantities){
 
-        setItemNames(itemDTOS);
-        setItemDescriptions(itemDTOS);
+         setItemIdentifiers(itemDTOS);
+         setItemNames(itemDTOS);
+         setItemDescriptions(itemDTOS);
 
         this.priceCalculator = new PriceCalculator(itemDTOS, quantities);
     }
@@ -61,7 +63,7 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
      *
      * @return The number of <code>ItemDTO</> types in form of a <code>Int</>
      */
-     int getNumberOfItemTypes(){
+    public int getNumberOfItemTypes(){
         return this.itemNames.length;
     }
 
@@ -80,6 +82,34 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
     }
 
     /**
+     * Sets the attribute itemIdentifiers to hava correct identifier to correct element position.
+     * @param itemDTOS contains the items identifiers.
+     */
+    private void setItemIdentifiers(ItemDTO[] itemDTOS) {
+        int[] identifiers = new int[itemDTOS.length];
+
+        for (int i = 0; i < identifiers.length; i++)
+            identifiers[i] = itemDTOS[i].getIdentifier();
+
+        this.itemIdentifiers = identifiers;
+    }
+
+    /**
+     * Checks if the array itemIdentifier contains a certain identifier.
+     *
+     * @param identifier is the identifier that needs comparison.
+     * @return either true or false depending on the sent identifier exzists in itemIdentifiers or not.
+     */
+     int checkItemIdentifiers(int identifier) {
+
+        for(int i = 0; i < this.itemIdentifiers.length; i++)
+            if (itemIdentifiers[i] == identifier)
+                return i;
+
+        return -1;
+    }
+
+    /**
      * Returns the description of an <code>ItemDTO<code/>.
      *
      * @param index The index of the wanted <code>ItemDTO<code/>.
@@ -94,7 +124,7 @@ import se.kth.iv1350.saleProcess.dbhandler.ItemDTO;
      *
      * @return The object priceCalculator.
      */
-     PriceCalculator getPriceCalculator(){
+     public PriceCalculator getPriceCalculator(){
         return this.priceCalculator;
     }
 }

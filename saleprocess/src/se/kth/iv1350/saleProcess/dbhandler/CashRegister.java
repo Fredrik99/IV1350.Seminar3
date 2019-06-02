@@ -49,4 +49,11 @@ public class CashRegister {
             observer.newAmountPaid(payment);
     }
 
+    /**
+     * Returns the amount present in the CashRegister
+     * @return is the amount present in the CashRegister.
+     */
+     Amount getAmountPresent() {
+        return amountPresent;
+    }
 }

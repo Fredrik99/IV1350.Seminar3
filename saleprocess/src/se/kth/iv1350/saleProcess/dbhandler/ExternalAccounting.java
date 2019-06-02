@@ -25,4 +25,12 @@ public class ExternalAccounting {
 
         System.out.println("***External Accounting has been updated!***\n");
     }
+
+    /**
+     * Returns the attribute saleLog.
+     * @return is the reurned attribute saleLog
+     */
+    public SaleLog getSaleLog() {
+        return saleLog;
+    }
 }

@@ -12,7 +12,6 @@ public class Printer {
      * Creates a new instance.
      */
      Printer(){
-
     }
 
     /**
